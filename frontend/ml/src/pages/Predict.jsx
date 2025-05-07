@@ -27,7 +27,7 @@ function Predict() {
 
   const handlePredict = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/predict", form);
+      const res = await axios.post("http://16.16.199.117:5000/predict", form);
       setResult(res.data.predicted_status);
     } catch (err) {
       setResult("Error: " + err.message);
